@@ -17,12 +17,16 @@ The tests implemented include:
 1. Clone repository
 ```bash
 git clone https://github.com/Ozu-bezariusu/DL_pw_4.git
+```
+```bash
 cd DL_pw_4
 ```
 
 2. Build and Run project
 ```bash
 go build
+```
+```bash
 ./dl_pw_4
 ```
 
