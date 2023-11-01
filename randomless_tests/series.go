@@ -8,28 +8,6 @@ func SeriesTest(data []byte) bool {
 	var currentBit uint8
 	var previousBit uint8
 
-	// for _, b := range data {
-	// 	for i := 0; i < 8; i++ {
-	// 		if b&(1<<i) != 0 {
-	// 			oneSeries++
-
-	// 			if oneSeries > maxSeriesLength {
-	// 				return false
-	// 			}
-
-	// 			zeroSeries = 0
-	// 		} else {
-	// 			zeroSeries++
-
-	// 			if zeroSeries > maxSeriesLength {
-	// 				return false
-	// 			}
-
-	// 			oneSeries = 0
-	// 		}
-	// 	}
-	// }
-
 	for key, b := range data {
 		for i := 7; i >= 0; i-- {
 			if key == 0 && i == 7 {

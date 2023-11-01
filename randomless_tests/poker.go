@@ -9,7 +9,7 @@ func PokerTest(data []byte) bool {
 	n := float64((len(data) * 8) / m) //blocks quantity
 
 	blockCount := make(map[uint8]int)
-	mask := byte((1 << m) - 1) // маска для вибору m бітів
+	mask := byte((1 << m) - 1) // mask to choose m bits
 
 	for _, b := range data {
 		for i := 0; i < 8; i += m {
